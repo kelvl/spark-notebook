@@ -28,7 +28,6 @@ enablePlugins(GitBranchPrompt)
 
 import uk.gov.hmrc.gitstamp.GitStampPlugin._
 
-net.virtualvoid.sbt.graph.Plugin.graphSettings
 
 import com.typesafe.sbt.SbtNativePackager.autoImport.NativePackagerHelper._
 

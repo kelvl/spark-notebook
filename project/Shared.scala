@@ -95,6 +95,12 @@ object Shared {
         hadoopClient(hv),
         jets3tVersion,
         commonsCodec
+      ) ++ (
+        Seq(
+          "org.apache.hadoop" % "hadoop-aws" % hv,
+          "postgresql" % "postgresql" % "9.1-901-1.jdbc4",
+          "org.apache.hadoop" % "hadoop-aws" % "2.7.1"
+        )
       ) ++ sparkCSV ++ (
             if (!v.startsWith("2.10")) {
               // in 2.11
